@@ -4,6 +4,7 @@ use PHPUnit\Framework\TestCase;
 
 class Test extends TestCase
 {
+    /** @test */
     public function testMdu (){
 
         // $this -> assertSame(10 , 10);
