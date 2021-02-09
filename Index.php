@@ -4,14 +4,14 @@ $db="configuration";
 $dbhost="localhost";
 
 // serveur 
-// $dbport=3306;
-// $dbuser="matthieu";
-// $dbpasswd="mdp";
+$dbport=3306;
+$dbuser="matthieu";
+$dbpasswd="mdp";
 
 //local ( poste developpement)
-$dbport=3307;
-$dbuser="root";
-$dbpasswd="";
+// $dbport=3307;
+// $dbuser="root";
+// $dbpasswd="";
 
 $pdo = new PDO('mysql:host='.$dbhost.';port='.$dbport.';dbname='.$db.'', $dbuser, $dbpasswd);
 $pdo->exec("SET CHARACTER SET utf8");
